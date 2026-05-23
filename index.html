@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marcelo Cavalcanti - Desenvolvedor Front-end</title>
-    <meta name="description" content="Portfólio de Marcelo Cavalcanti - Desenvolvedor Front-end Junior especializado em React, JavaScript e tecnologias modernas" />
+    <title>Marcelo Cavalcanti — Desenvolvedor Front-end</title>
+    <meta name="description" content="Portfólio de Marcelo Cavalcanti — Desenvolvedor Front-end especializado em React, JavaScript e tecnologias modernas." />
     <meta name="author" content="Marcelo Cavalcanti" />
+    <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <script>
+      (function() {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'light' || (!theme && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+          document.documentElement.classList.remove('dark');
+          document.documentElement.classList.add('light');
+        }
+      })();
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <meta property="og:title" content="Marcelo Cavalcanti - Desenvolvedor Front-end" />
-    <meta property="og:description" content="Portfólio de Marcelo Cavalcanti - Desenvolvedor Front-end Junior especializado em React, JavaScript e tecnologias modernas" />
+    <meta property="og:title" content="Marcelo Cavalcanti — Desenvolvedor Front-end" />
+    <meta property="og:description" content="Portfólio de Marcelo Cavalcanti — Desenvolvedor Front-end especializado em React, JavaScript e tecnologias modernas." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="/lovable-uploads/og-image.png" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:title" content="Marcelo Cavalcanti — Desenvolvedor Front-end" />
+    <meta name="twitter:description" content="Portfólio de Marcelo Cavalcanti — Desenvolvedor Front-end especializado em React, JavaScript e tecnologias modernas." />
   </head>
 
   <body>
